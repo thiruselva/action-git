@@ -1,0 +1,14 @@
+name: My First Test Action
+
+on: [push]
+
+jobs:
+  run-shell-commands:
+  run-on: ubuntu-latest
+  steps:
+    - name: Echo commands
+      run: Echo "Hello World"
+    - name: Print Version
+      run: |
+        node -v
+        npm -v
